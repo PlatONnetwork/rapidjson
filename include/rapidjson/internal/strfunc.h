@@ -42,7 +42,7 @@ inline SizeType StrLen(const char* s) {
 
 template <>
 inline SizeType StrLen(const wchar_t* s) {
-    return SizeType(std::wcslen(s));
+    return SizeType(wcslen(s));
 }
 
 //! Returns number of code points in a encoded string.
